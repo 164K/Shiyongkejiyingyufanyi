@@ -128,13 +128,21 @@
                 "file": "文献阅读.md"
               }
             }
+          },
+          {
+            "id": "e17b2fcd1eae5d2e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 373.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,7 +154,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ec541a2ba8d8329b",
+  "active": "e17b2fcd1eae5d2e",
   "lastOpenFiles": [
     "WUT_Beamer_Theme_Advanced.pdf",
     "Rubik's_cube.svg.png",
