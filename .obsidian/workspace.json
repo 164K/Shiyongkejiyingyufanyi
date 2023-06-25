@@ -4,17 +4,38 @@
     "type": "split",
     "children": [
       {
-        "id": "f7416a1c2a1d30cb",
+        "id": "211a04a1bfcd0d06",
         "type": "tabs",
+        "dimension": 55.590062111801245,
         "children": [
           {
-            "id": "ec541a2ba8d8329b",
+            "id": "f0558783f6da592c",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
                 "file": "文献阅读.md",
-                "staged": true
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "9c1681924a98e60f",
+        "type": "tabs",
+        "dimension": 44.409937888198755,
+        "children": [
+          {
+            "id": "737b28af79445bf2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -68,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 420.5
+    "width": 215.5
   },
   "right": {
     "id": "a84b05fcedd66f56",
@@ -84,6 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "文献阅读.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "文献阅读.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -121,7 +144,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "文献阅读.md"
+              }
             }
           },
           {
@@ -149,8 +174,9 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ec541a2ba8d8329b",
+  "active": "f0558783f6da592c",
   "lastOpenFiles": [
+    "笔记.md",
     "文献阅读.md",
     "WUT_Beamer_Theme_Advanced.pdf",
     "Rubik's_cube.svg.png",

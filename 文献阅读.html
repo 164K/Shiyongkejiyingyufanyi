@@ -1,209 +1,417 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>&#x6587;&#x732e;&#x9605;&#x8bfb;&#x603b;&#x7ed3;</title>
-        <style>
-/* From extension vscode.github */
-/*---------------------------------------------------------------------------------------------
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>&#x6587;&#x732e;&#x9605;&#x8bfb;&#x603b;&#x7ed3;</title>
+    <style>
+        /* From extension vscode.github */
+        /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-.vscode-dark img[src$=\#gh-light-mode-only],
-.vscode-light img[src$=\#gh-dark-mode-only] {
-	display: none;
-}
+        .vscode-dark img[src$=\#gh-light-mode-only],
+        .vscode-light img[src$=\#gh-dark-mode-only] {
+            display: none;
+        }
+    </style>
 
-</style>
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
-<style>
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
-                font-size: 14px;
-                line-height: 1.6;
-            }
-        </style>
-        <style>
-.task-list-item {
-    list-style-type: none;
-}
 
-.task-list-item-checkbox {
-    margin-left: -20px;
-    vertical-align: middle;
-    pointer-events: none;
-}
-</style>
-        
-    </head>
-    <body class="vscode-body vscode-light">
-        <!-- title:文献阅读总结 -->
-<h1 id="目录">目录</h1>
-<ul>
-<li><a href="#%E5%88%98%E6%AC%A3%E6%82%A6">刘欣悦</a></li>
-<li><a href="#%E4%BB%BB%E6%96%87%E6%96%8C">任文斌</a></li>
-<li><a href="#%E5%BC%A0%E5%AE%87">张宇</a></li>
-<li><a href="#%E4%BB%BB%E5%B9%BF%E8%BD%B6">任广轶</a></li>
-<li><a href="#%E8%94%A1%E7%A3%8A">蔡磊</a></li>
-<li><a href="#%E5%94%90%E5%98%89%E5%A5%95">唐嘉奕</a></li>
-<li><a href="#%E7%8E%8B%E6%96%87%E5%8D%9A">王文博</a></li>
-</ul>
-<h1 id="刘欣悦">刘欣悦</h1>
-<h2 id="toward-automatic-information-search-and-convergence-a-method-on-dynamic-information-requirement-expression-generation">Toward automatic information search and convergence: A method on dynamic information requirement expression generation</h2>
-<h2 id="面向信息自动搜索与收敛一种动态信息需求表达生成方法">面向信息自动搜索与收敛：一种动态信息需求表达生成方法</h2>
-<h3 id="abstract"><strong>Abstract</strong></h3>
-<p>As available information on networked environment becomes more abundant, diversified, and <strong>dispersed</strong>（分散的）, traditional fixed information service mode will be <strong>substituted</strong>（替代） by <strong>on-demand</strong>（请求式） information search and <strong>convergence</strong>（融合）. Therefore, <strong>dynamic</strong>（动态的） and precise express of user information requirement becomes an important impact factor of information service quality.</p>
-<p>随着网络环境下可用信息的日益丰富、多样化和分散化，传统的固定信息服务模式将被按需信息搜索和融合所取代。因此，用户信息需求的动态、精准表达成为影响信息服务质量的重要因素。</p>
-<p>Based on TIREM (task information requirement express model), a method is <strong>proposed</strong>（提出） on dynamic information requirement expression generation, along with a demo software developed to <strong>verify</strong>（证实） the <strong>feasibility</strong>（可能性） of TIREM and the proposed method.</p>
-<p>在任务信息需求表达模型(TIREM)的基础上，提出了一种动态信息需求表达的生成方法，并开发了一个演示软件来验证该方法的可行性。</p>
-<h3 id="b-girdl-and-analytical-transformation-mechanismgirdl与解析转化机制"><strong>B. GIRDL and Analytical Transformation Mechanism（GIRDL与解析转化机制）</strong></h3>
-<p>In this paper, the General Information Requirements Description Language (GIRDL) <strong>syntax</strong>（句法规则） <strong>specification</strong>（规范） , and the syntax specification for further expansion, formed a “Select … Where … When … From. ” as the main syntax, then <strong>illustrate</strong>（说明） 4 field meanings:</p>
-<p>在本文中，通用信息需求描述语言(GIRDL)语法规范，和进一步扩展的语法规范形成了“Select…Where…When…From”。作为主要语法，然后说明4个字段的含义:</p>
-<p>Select and Where to follow <strong>SQL syntax</strong>（一种数据库语法）. <strong>Wherein</strong>（其中）, Select indicating unknown information to be queried, Where used to indicate the relevant known information defining the information to be queried. But unlike in SQL, Select and Where in terms GIRDL not simply attribute name, but a string of “subject” and the name “attribute” name and “.” Symbols or known as the “property chain”.</p>
-<p>Select and Where to follow SQL语法。其中:‘选择’表示要查询的未知信息。其中，表示相关的已知信息，定义要查询的信息。但与SQL中不同的是，GIRDL中的Select和Where不是简单的属性名称，而是一个由“subject”和名称组成的字符串“属性”name和“。”符号或称为“属性链”。</p>
-<h3 id="c-template-driven-approach基于模板驱动的信息需求表达式"><strong>C. Template-Driven Approach（基于模板驱动的信息需求表达式）</strong></h3>
-<p>For applications in the field of user <strong>transaction</strong>（交易） categories, each category of firms will need to write a message <strong>template</strong>（模板） information needs to define the type and <strong>scope</strong>（范围） of information required to define the <strong>appropriate</strong>（合适的） variables for factors which change during treatment to practical matters,</p>
-<p>对于用户交易类别领域的应用，每一类公司都需要编写信息模板，需要确定信息的类型和范围，需要确定在处理实际事项期间发生变化的因素的适当变量;</p>
-<p>transferring the corresponding the template and the actual value of the variable to fill in the blank template to generate the actual information needs of expression,then the expression parsing（解析，分析） conversion <strong>mechanism</strong>（机制） according to the information needs to be converted to the corresponding type of information requested,</p>
-<p>传递相应的模板和实际值的变量来填充空白模板，生成实际信息需要的表达式，然后表达式解析转换机制根据所需要的信息转换为所请求信息的相应类型;</p>
-<p>and then according to the expression of art <strong>terminology</strong>（术语）, demand accurately described above is the core idea of this method. Summed up: by early accumulation of a certain amount of knowledge, and then used to dynamically generate demand.</p>
-<p>然后根据艺术术语的表达，准确描述上述需求是该方法的核心思想。总结起来就是:通过前期积累一定的知识，然后用来动态地产生需求。</p>
-<p>Difficulties approach is that <strong>mining</strong>（挖掘） <strong>miracles mapping knowledge</strong>（前文提到的一种叫奇迹映射的知识提取与描述方法。） in three steps: (1) to dig out what key factors play a role in restricting transactions between the user and the information demand, such as the target value systems, transaction <strong>execution</strong>（执行，实施） logic, Equipment Capability environmental characteristics;</p>
-<p>难点方法是分三步挖掘奇迹映射知识:(1)挖掘制约用户与信息需求之间交易的关键因素，如目标值体系、交易执行逻辑、设备能力环境特征等;</p>
-<p>(2) to dig out the relationship of <strong>mutual</strong>（相互的，彼此的） restraint between these key factors; (3) to dig out these key factors for law information needs. Three steps to achieve this requires a lot of digging to do letter <strong>mapping</strong>（映射） instance as the sample data, these data can be obtained is the <strong>prerequisite</strong>（前提） ability to carry out mining lies.</p>
-<p>(2)挖掘出这些关键因素之间相互制约的关系;(3)挖掘出这些法律信息需求的关键因素。实现这三步需要大量的挖掘做字母映射实例作为样本数据，这些数据的获取是进行挖掘能力的前提所在。</p>
-<h1 id="任文斌">任文斌</h1>
-<h2 id="database-management-systemsdbms-and-management-information-systemmis">Database management systems(DBMS) and management information system(MIS)</h2>
-<h2 id="数据库管理系统dbms和管理信息系统mis">数据库管理系统（DBMS）和管理信息系统(MIS)</h2>
-<p>You know that a database is a collection of <strong>logically</strong> related data elements that may be structured in various ways to meet the multiple processing and retrieval needs of organizations and individuals. There's nothing new about databases--early ones were <strong>chiseled</strong> in stone, penned on scrolls, and written on index cards. But now databases are commonly recorded on <strong>magnetically</strong> media, and computer programs are required to perform the necessary storage and retrieval operations.</p>
-<ul>
-<li>logically['lɒdʒɪkli] adv.逻辑</li>
-<li>chiseled['tʃɪzəld] v.凿</li>
-<li>magnetically adv.磁化</li>
-</ul>
-<p>众所周知，数据库是逻辑上相关的数据元的汇集，这些数据元可以按不同的结构组织起来，以满足单位和个人的多种处理和检索的需要。数据库本身不是什么新鲜事---早期的数据库凿在石头上，记在名册上，以及写在索引卡中。而现在，数据库普遍记录在可磁化的介质上，并且需要用计算机程序来执行必需的存储和检索操作。</p>
-<p>You'll see in the following pages that complex data relationships and linkages may be found in all but the simplest databases. The system software package that handles the difficult tasks associated with creating, accessing, and maintaining database records is called a database management system (DBMS). The programs in a DBMS package establish an interface between the database itself and the users of the database. (These users may be applications programmers, managers and others with information needs, and various OS（operating system） programs. )</p>
-<p>如下所述，除最简单以外的所有数据库中都有复杂的数据关系及其链接。处理与创建、访问以及维护数据库记录有关的复杂任务的系统软件包叫做数据库管理系统(DBMS)。DBMS软件包中的程序在数据库与其用户间建立接口。(这些用户可以是应用程序员、管理员、及其他需要信息的人员和各种操作系统程序)。</p>
-<p>A DBMS can organize, process, and present selected data elements from the database. This capability enables decision makers to search, probe, and query database contents in order to extract answers to <strong>nonrecurring</strong> and unplanned questions that aren't available in regular reports. These questions might initially be vague and/or poorly defined, but people can &quot;browse&quot; through the database until they have the needed information.</p>
-<ul>
-<li>nonrecurring 非经常性的</li>
-<li>vague 模糊</li>
-<li>browse 浏览</li>
-</ul>
-<p>DBMS可组织、处理和表示从数据库中选出的数据元。该功能使决策者能搜
-索、探查和查询数据库的内容，从而对在正规报告中没有的、不再出现的且无法预料的问题作出回答。这些问题最初可能是模糊的并且(或者)是定义不恰当的，但是人们可以浏览数据库直到获得所需的信息。</p>
-<p>In short, the DBMS will &quot;manage&quot; the stored data items and assemble the needed items from the common database in response to the queries of those who aren't programmers. In a file-oriented system, users needing special
-information may communicate their needs to a programmer, who, when time permits,will write one or more programs to extract the data and prepare the information. The availability of a DBMS,however, offers users a much faster alternative communications path.</p>
-<p>简言之，DBMS将“管理”存储的数据项，并从公共数据库中汇集所需的数据项以回答非程序员的询问。在面向文件的系统中，需要特定信息的用户应将他们的要求传送给程序员。该程序员在时间允许时，将编写一个或多个程序以提取数据和准备信息。然而，DBMS 的可用性为用户提供了一个更快的替代通信的通道。</p>
-<p>The management information system (MIS) concept has been defined in dozens of ways. Since one organization's model of an MIS is likely to differ from that of another, it's not surprising that their MIS definitions would also vary in scope and breadth. For our purposes, an MIS can be defined as a network of computer- based data processing procedures developed in an organization and integrated as necessary with manual and other procedures for the purpose of providing timely and effective information to support decision making and other necessary management functions.</p>
-<p>管理信息系统(MIS)的概念已经用数十种方式定义过。因为MIS的组织模型可能各不相同，所以MIS的定义随应用范围和广度而变化就不奇怪了。本文认为，MIS系统可定义为基于计算机的数据处理过程的网络系统，它是一个机构为了支持决策及其他必需的管理功能提供及时有效的信息而开发的，并且可按需要把人工和其他过程结合在一起。</p>
-<p>Although MIS models differ,most of them recognize the same concepts. In addition to what might be termed the <strong>horizontal management</strong> structure ,an organization is also divided <strong>vertically</strong> into different specialities and functions which require separate information flows .Combining the horizontal managerial levels with the vertical specialities produces the complex organizational structure . Underlying this structure is a database consisting, ideally, of internally and externally produced data relating to past,present, and predicted furture events.</p>
-<ul>
-<li>horizontal management 横向管理</li>
-<li>vertically 纵向地，垂直地</li>
-</ul>
-<p>尽管MIS模型不同，但其中大多数都认可同一个概念。除横向管理结构如何命名之外，一个机构从纵向也可分成需要独立信息流的不同职能部门。综合横向管理级和纵向特长产生了复杂组织结构。这个结构的基础是数据库，该数据库理想的方式是由内部和外部产生的，与过去、现在及预见到的将来事件相关的数据组成。</p>
-<p>The <strong>formidable</strong> task of the MIS designer is to develop the information flow needed to support decision making Generally speaking,much of the information needed by managers who occupy different levels and who have different responsibilities is obtained from a collection of existing information systems (or subsystems) . These systems may be tied together very closely in an MIS. More often, however, they are more <strong>loosely coupled</strong>.</p>
-<ul>
-<li>formidable 艰巨的</li>
-<li>loosely coupled 松散耦合</li>
-</ul>
-<p>MIS设计者的一个棘手的问题是开发支持决策所需的信息流。一般而言，不同级别与不同职责的管理者所需的信息大多来自现有信息系统(或子系统)的汇集，这些系统在MIS中可紧密地结合在一起，但是，更通常存在的情况是松散耦合的。</p>
-<h1 id="张宇">张宇</h1>
-<h2 id="ecological-concepts-in-traditional-vernacular-dwellings">Ecological concepts in traditional vernacular dwellings</h2>
-<h2 id="传统民居建筑体现的生态思想">传统民居建筑体现的生态思想</h2>
-<h3 id="simple-ecological-concept-of-human-nature-oneness"><strong>Simple ecological concept of &quot;human-nature oneness&quot;</strong></h3>
-<h3 id="天人合一的朴素生态观"><strong>“天人合一”的朴素生态观</strong></h3>
-<p>“Human-nature oneness” is a fundamental theme of traditional Chinese eco-culture, also a guiding rule of Confucianism and Taoism the predominant cultures of China for coordinating the relationship between human and nature, the ideal living state that people yearned for in the age of agricultural civilization. The site selection, structure, appearance, form and style of vernacular dwellings all demonstrate the concept of “human-nature oneness”, to realize the harmonious development of human, building and environment.</p>
-<p>“天人合一”是中国生态文化传统中一个根本性的主题,也是中国主流文化的儒家和道家所主张的一种协调人与自然关系的指导思想,同时还是农业文明时代人们所向往的一种至高的生存境界。民居建筑的选址、格局、外观、形式和风格无不体现出“天人合一”的思想,实现人、建筑与环境的和谐发展。</p>
-<p>Construction ideas of coexisting with nature harmoniously followed by traditional vernacular dwellings include the voluntary protection over water sources and land in the natural environment, as well as the greening of dwelling environment. For example, cave-house is a frequently-seen folk house in the Loess Plateau, being influenced by the simple ecological concept of “human-nature oneness”, is always constructed according to actual landforms with local materials by integrating into local eco-environment.</p>
-<p>传统民居建设遵循与自然谐调共生的营建思想包括对自然环境中水源、土地的主动保护,对居民周围环境进行绿化等。如窑洞式住宅是黄土高原地区较为普遍的民居形式,受到“天人合一”朴素生态观念的影响,它顺应自然,因地制宜,因材致用,适应环境,融合生态。</p>
-<p>Cave-house is always located along the mountain foot, hillside, gully or on the tableland, without occupying cultivated land[1].A vaulted doorway is constructed at the entrance to the cave-house with bricks and <strong>ornamental</strong>（装饰性的） patterns, which can not only maintain a stable cave entrance, but also beautify the living environment . As construction materials are concerned, the thick loess layer with less <strong>permeability</strong>（渗透性） provides an <strong>unprecedented</strong>（空前的） condition for constructing cave-houses.</p>
-<p>如表现在选址上,窑洞常坐落于黄土高原的山脚下、半山腰、冲沟两侧或黄土塬上,不占耕地,节约农田。在窑洞前部用砖砌成拱形门洞,并做花饰,既起到保证窑脸的黄土稳定的作用,又起到美化生活环境的作用。表现在建筑材料上,厚且难渗水的黄土层,为窑洞建筑的形成提供了得天独厚的条件。</p>
-<p>Besides, the dry climate in northwestern China with less <strong>precipitation</strong>（降水）, cold winter and insufficient wood resources also provide opportunities for developing such an economic and practical house type which needs no wood, create a space warm in winter and cool in summer.</p>
-<p>西北地区气候干燥少雨、冬季寒冷、木材较少等自然状况,也为冬暖夏凉、经济适用、不需木材的窑洞,创造了发展和延续的契机。</p>
-<p>In this region, low air temperature and deep groundwater level keep surface soil dry, and its sick soil layer, strong <strong>cohesive</strong>（有结合力的） strength and shear <strong>strength</strong>（抗剪强度） ensure an excellent integrity, stability and moderate plasticity, thus vertical wall will not be easily broken, and cave-house is a suitable housing type in this region.</p>
-<p>该地区空气温度小,地下水位深,地表土层经常能保持较干燥的状态,土层深厚,土质粘度较高,粘聚力和抗剪强度较强,具有较好的整体性、稳定性和适度的可塑性,直壁不易坍塌,适宜开挖窑洞。</p>
-<p>Meanwhile, due to the heat storage and proofing effect of soils, indoor spaces will be cool in summer and warm in winter. Above the cave-houses, plants are growing to maintain water and soil. Observing from the indoor, rooftop is vaulted, cooking stove is connected with kang (heatable brick bed), in this way, the whole room is easily exposed to sunshine but not wind or sand.</p>
-<p>同时由于土壤良好的蓄热、隔热性能,使得建筑冬暖夏凉。窑洞的上方,种植植物以保持水土。从室内观察窑洞,屋顶是弧形的拱状,灶台连着暖炕。阳光易照射进来,风沙难以入内。</p>
-<h3 id="fengshui-doctrine-of-balance-of-yin-and-yang"><strong>Fengshui doctrine of &quot;balance of yin and yang&quot;</strong></h3>
-<h3 id="负阴抱阳的风水观"><strong>“负阴抱阳”的风水观</strong></h3>
-<p>Fengshui, with its simple natural view and people’s psychological demands of “avoiding unluckiness and seeking for luckiness”, reflects the relationship between human settlement and nature, although includes some <strong>superstitious</strong>（迷信的） factors, its fundamental doctrines show the scientific understandings of ancient Chinese about environmental conditions for finding a suitable living space.</p>
-<p>“风水”以极朴素的自然观和“避凶趋吉”的心理需求,反映了人类聚居与自然的关系。虽然它包含较多的迷信成分,但它的基本原则却反映了早期中国人为寻找理想的居住地点,对环境条件的科学认识。</p>
-<p>“Facing sunny side and water, backing on the shady side and mountains” is the basic principle to select a location of house in China. According to the geographical and climatic conditions in China, mountains behind the house can hold the cold current from the west in winter, facing the south and sunny side embrace cool breeze from the south in summer and ensure sufficient sunshine in winter, location near water provide convenient irrigation and domestic water use, better transportation and also aquiculture.</p>
-<p>“负阴抱阳,背山面水”是中国传统民居择址的基本原则。根据我国具体的地理环境和气候特点,背山可以遮挡冬天北来的寒流;面南可以迎纳夏日南来的凉风;朝阳可以获得充足的日照;近水可以取得方便的生活、灌溉用水,还有利于水运交通及水产养殖。</p>
-<p>Plains with gentle slopes can avoid flood disasters, flourishing vegetation in the mountain can maintain water and soil, improve microclimate, as well as provide fuels and other resources for residents.</p>
-<p>略有缓坡的平川可免受水患灾害,山上植被丰茂可以保持水土,改善小气候,并为人们提供燃料和其他多种资源。</p>
-<p>Therefore, such excellent environmental conditions are extremely suitable for people’s living. Laozi once said “Human models itself after Earth, the Earth models itself after Heaven, the Heaven models itself after Tao, Tao models itself after the Nature”. All creatures in this world consist of yin and yang, being coordinated and balanced, for instance, traditional quadrangles have both courtyard and sky well thus are proper combinations of natural environment and relatively close spaces , which are favorable for shaping the microclimate of ecological environment, and are demonstrations of balanced yin and yang.</p>
-<p>这种天造地就的优良环境,极适合人们休养生息,无疑会给人们带来舒适的居住环境。老子曰:“人法地,地法天,天法道,道法自然”。世界万物都是阴阳互补共成、均衡协调的,如传统民居建筑四合院中有庭院和天井,具有自然环境和相对闭合的空间、有利于生态环境小气候的形成,是负阴抱阳、阴阳互补的有力见证,以形聚气,气凝于穴。</p>
-<p>In this case, houses represent yang, also shi (real), while courtyard represents yin, also xu (virtual), and the combination of both provide solutions to various problems, such as sun exposure, <strong>ventilation</strong>（通风）, thermal retardation, heat protection, wind proof, dehumidification, keeping off shade, wind prevention, <strong>drainage</strong>（排水） and so on. All of these favorable functions owe to courtyard and sky well which bring the nature into living environment, reproduce a miniature as well as a serene and beautiful space with <strong>vitality</strong>（生命力）.</p>
-<p>宅地屋宇为阳即为实,庭院天井为阴即为虚,解决了日照、通风、保温、隔热、防风、祛湿、隔阴、防火、排水等问题,这要归功于庭院天井引入自然,再造自然,使空间优美净雅却又生机盎然。</p>
-<h1 id="任广轶">任广轶</h1>
-<h2 id="how-transistors-changed-the-world-over-75-years">How Transistors Changed the World over 75 Years</h2>
-<h2 id="晶体管如何在75年内改变世界">晶体管如何在75年内改变世界</h2>
-<p>晶体管泛指一切以半导体材料为基础的单一元件，晶体管具有检波、整流、放大、开关、稳压、信号调制等多种功能，晶体管可用于各种各样的数字和模拟功能。</p>
-<p>打个简单的比喻，我们的大脑由1000亿个称为神经元的细胞组成，这些细胞用于思考和记忆事物。计算机也一样，也有数十亿个名为晶体管的微小脑细胞。</p>
-<p>在数字电路领域，电子管和晶体管通俗理解就是可以控制的开关，所以可以实现逻辑运算。在模拟电路领域，电子管和晶体管通俗理解就是放大信号，输入一个微弱的信号可以输出一个放大了很多倍的信号。集成电路的通俗理解就是一个有黑色壳封装的硅片上面有几十亿个晶体管可以实现各种逻辑运算。</p>
-<p>Some historians of technology have argued that the transistor, first crafted at Bell Labs in late 1947, is the most important invention in human history. Whether that's true or not, what is without question is that the transistor helped trigger a revolution that digitized the world.</p>
-<p>晶体管于1947年底在贝尔实验室首次被制造出来。一些科技史学家认为，晶体管是人类历史上最重要的发明。不管这是真是假，毫无疑问的是，晶体管引发了一场世界数字化的革命。</p>
-<p>Transistors are typically made from certain elements called semiconductors, which are useful for manipulating current. The first transistor was fashioned from a metalloid, germanium. By the mid-1960s, most transistors were being made from silicon, and engineers were packing transistors together into complex integrated circuits: the foundation of computer chips.</p>
-<p>晶体管通常由某些被称为半导体的材料制成，这些材料对控制电流很有用。第一个晶体管是用类金属锗制成的。到上世纪60年代中期，大多数晶体管都是由硅制成的，工程师们将晶体管打包成复杂的集成电路：这是计算机芯片的基础。</p>
-<p>Before its dominance, electronics relied on vacuum tubes. Vacuum tubes have a few advantages over transistors. They could generate more power. But vacuum tubes are very bulky and delicate. The transistor seemed to be a convenient replacement.</p>
-<p>在晶体管占据主导地位之前，电子产品依赖于真空管。与晶体管相比，真空管有一些优点。它们可以产生更多的能量。但是真空管非常笨重，而且易碎。晶体管似乎是一种方便的替代品。</p>
-<p>A computer built just before the start of the transistor era — ENIAC — used 18,000 vacuum tubes and filled up a space the size of a ballroom. Vacuum tube computers squeezed into smaller rooms over time. Even then, 1951's UNIVACI cost over a million dollars, and its customers were large businesses or data-heavy government agencies. It wouldn't be until the 1970s and 1980s when personal computers, powered by transistors, started to enter middle-class homes.</p>
-<p>一台在晶体管时代开始前制造的计算机——ENIAC——使用了18000个真空管，占据了一个舞厅大小的空间。随着时间的推移，真空管计算机也挤进了更小的房间。即使在那时，1951年的UNIVACI耗资超过100万美元，其客户是大企业或数据量大的政府机构。直到上世纪七八十年代，由晶体管驱动的个人电脑才开始进入中产阶级家庭。</p>
-<p>Without transistors, we might live in a world where a computer is something you'd use at work — not at home. Forget smartphones, handheld navigation, flatscreen displays, electronic timing screens in train stations, or even humble digital watches.</p>
-<p>如果没有晶体管，我们可能会生活在一个电脑只在工作场所使用而不是在家里使用的世界。更别提智能手机、手持导航、平板显示器、火车站的电子计时屏幕，甚至是不起眼的电子表了。</p>
-<p>&quot;The transistor is fundamental for all modern technology, including telecommunications, data communications, aviation, and audio and video recording equipment,&quot; says Ravi Todi, current president of the IEEE Electron Devices Society.</p>
-<p>电气与电子工程师协会（IEEE）电子设备学会现任主席拉维·托迪（Ravi Todi）说，“晶体管是所有现代技术的基础，包括电信、数据通信、航空以及音频和视频录制设备。”</p>
-<h1 id="蔡磊">蔡磊</h1>
-<p>In recent years, the emergence of emerging technologies such as cloud computing and artificial intelligence has led to great development in all walks of life. Among them, as the latest subversive innovation in the game industry, cloud games have become a necessary technology in the game industry and are developing rapidly. This article will discuss the development and trend of cloud game technology from the aspects of the development history of cloud games, the current situation, advantages and disadvantages of cloud game technology, and the future challenges and trends faced by cloud games.</p>
-<p>近年来，云计算、人工智能等新兴技术的出现，让各行各业都得到了长足的发展。其中，云游戏作为游戏行业最新的颠覆式创新，已经成为游戏行业的必备技术，正在迅速地发展壮大。本文将从云游戏的发展历程、云游戏技术的现状及优缺点、以及云游戏面临的未来挑战和趋势等方面，探讨云游戏技术的发展及其趋势。</p>
-<p>Cloud games originated from Internet TV games. It is a form of games that transmit game screens to user terminals with the help of high-speed Internet connection. The earliest cloud games appeared around 2000, when cloud games had not been developed enough due to the limitations of network transmission technology. It was not until around 2010, due to the progress of cloud computing technology, that cloud games began to enter the public eye and became one of the hottest topics in the game industry.</p>
-<p>云游戏最早起源于互联网电视游戏，是一种借助高速互联网连接，将游戏画面传输到用户终端上运行的游戏形式。最早的云游戏出现于2000年左右，当时由于网络传输技术的限制，云游戏还没有得到足够的发展。直到2010年左右，由于云计算技术的进步，云游戏才开始进入大众视野，成为游戏行业最热门的话题之一。</p>
-<p>Cloud game technology has developed to a certain extent and has achieved remarkable results. Its main technical routes include cloud games based on streaming media transmission, browser-based cloud games, and cloud server-based games. So far, cloud game technology has a variety of options such as multiplayer online games, high-quality, 3D virtual reality, etc. However, there are also some advantages and disadvantages of cloud game technology. The advantage is that cloud games allow players to play high-quality games without high-performance graphics cards without considering storage space. At the same time, the distribution of cloud games is also more convenient; the disadvantage is that the delay of the network will affect the game experience. Players of cloud games need to have enough network bandwidth and a stable network connection, otherwise there may be problems such as stuttering and disconnection.</p>
-<p>云游戏技术已经发展到了一定的程度，取得了较为显著的成果。其主要技术路线有基于流媒体传输的云游戏、基于浏览器的云游戏、基于云服务器的云游戏。至今，云游戏技术已经具备了多人在线游戏、高画质、3D虚拟现实等多种选择。然而，云游戏技术也存在一些优缺点。其优点在于云游戏可以让玩家不需要高性能显卡就能玩到高画面质量游戏，无需考虑存储空间。同时，云游戏的分发也更为便捷；缺点则在于网络的延迟会对游戏体验有所影响。云游戏的玩家需要有足够的网络带宽和稳定的网络连接，否则可能会出现卡顿、掉线等问题。</p>
-<p>Although cloud games have many advantages, they also face many future challenges. One of the biggest challenges is the problem of network latency. Although broadband network technology has made great progress, the network speed is still not stable enough, and the delay problem is still one of the biggest problems. Secondly, cloud games should do a good job in the protection of player data. Game data, personal data, etc. in cloud games may face the risk of privacy disclosure. Finally, cloud games should solve the problem of game balance. When playing games on different devices, the player's comprehensive ability of the device will be different, which is a great challenge to the balance of the game.</p>
-<p>虽然云游戏有很多的优点，但是它也面临着许多未来挑战。其中最大的挑战就是网络延迟的问题。虽然现在宽带网络技术已经取得了很大进步，但是网速仍然不够稳定，延迟问题依然是最大问题之一。其次，云游戏要做好玩家数据的保护。云游戏中的游戏数据、个人数据等，可能面临着隐私泄露的风险。最后，云游戏要解决游戏平衡性问题。在各种不同的设备上进行游戏时，玩家的设备综合能力会有差异，对于游戏的平衡性是很大的挑战。</p>
-<p>In the future, cloud game technology will develop in the following aspects: first, vigorously develop 5G network technology to accelerate the transmission speed of cloud games and improve the quality of cloud games; second, quickly develop artificial intelligence technology to combine cloud games with AI to increase players' game experience; third, introduce blockchain technology to empower the effective circulation of game data. Through the above upgrades, the user experience of cloud games will be greatly optimized.</p>
-<p>未来的云游戏技术将会在以下几方面发展：第一、大力发展5G网络技术，加快云游戏的传输速度，提升云游戏的品质；第二、快速发展人工智能技术，将云游戏与AI相结合，增加玩家的游戏体验；第三、引入区块链技术赋能游戏数据有效流转。通过以上升级，将会极大地优化云游戏的用户体验。</p>
-<p>Conclusion In a word, cloud game technology will have more far-reaching influence and value, and there will be indispensable technical challenges and improvement solutions on the road to development. The continuous improvement and expansion of future development will certainly become an irreplaceable part of the game industry. The development of cloud games may be very long, but the future development direction and trend are very clear.</p>
-<p>未来的云游戏技术将会在以下几方面发展：第一、大力发展5G网络技术，加快云游戏的传输速度，提升云游戏的品质；第二、快速发展人工智能技术，将云游戏与AI相结合，增加玩家的游戏体验；第三、引入区块链技术赋能游戏数据有效流转。通过以上升级，将会极大地优化云游戏的用户体验。第六章：结论总之，云游戏技术将会有更加深远的影响力和价值，而在发展之路上也有着不可或缺的技术挑战和改进方案，在未来的发展中持续的提高和扩展，必将成为游戏行业不可替代的一部分。云游戏的发展可能还很漫长，但未来的发展方向和趋势已经非常的清晰。</p>
-<h1 id="唐嘉奕">唐嘉奕</h1>
-<h2 id="chatgpt-a-chat-robot-program-driven-by-ai-technology"><strong>ChatGPT</strong> A Chat Robot Program Driven by AI Technology</h2>
-<h3 id="简介">简介</h3>
-<p>ChatGPT (Chat Generative Pre-trained Transformer) is a generative pre trained transformation model developed by the OpenAI team in the United States. At this time, ChatGPT knows astronomy and geography, and can also interact based on the context of the chat. It is not only a chat robot, but also capable of tasks such as writing emails, video scripts, copywriting, translating, and writing code.</p>
-<p>ChatGPT（Chat Generative Pre-trained Transformer）全称为生成型预训练变换模型，由美国 OpenAI团队研发。此时的ChatGPT上知天文下知地理，还能根据聊天的上下文进行互动。它不单是聊天机器人，还能进行撰写邮件、视频脚本、文案、翻译 、写代码等任务。</p>
-<h3 id="technical-logic技术逻辑">Technical Logic(技术逻辑)</h3>
-<p>GPT is a pre-trained language model based on deep learning, which utilizes large-scale text data preprocessing and model training to enable it to recognize and generate natural language texts. In this process, the model will refer to a large number of conversation samples, learn the rules and features of human language structure, and then generate corresponding answers.
-GPT是一个基于深度学习的预训练语言模型，使用了大规模的文本数据预处理和模型训练，使其能够识别和生成自然语言文本。此过程中，模型会参考大量的对话样本，学习到人类语言结构的规则和特征，然后生成相应的回答。</p>
-<p>The emergence of this technology has overturned traditional rule-based chat robots. In the past, robots relied on developers to manually set rules for specific problems, but this method could not cover all situations. The chat robot using the GPT pre-training model has self-learning ability and can continuously learn and improve itself from existing sample data, thus being able to answer user questions more accurately.</p>
-<p>这种技术的出现，颠覆了传统的基于规则的聊天机器人。以往的机器人需要依赖开发者针对特定问题进行人工规则的设置，但是这种方法无法覆盖所有情况。而采用GPT预训练模型的聊天机器人，具有自学习能力，可以从已有的样本数据中不断学习和完善自己，因此能够更加准确地回答用户的问题。</p>
-<p>The application scenarios of ChatGPT also include:
-Used to develop chat robots, write and debug computer programs, and create works in literature and media related fields, including music, TV dramas, fairy tales, poetry, and lyrics. In certain testing scenarios, ChatGPT performs even better than ordinary human testers in education, exams, and answering test questions.</p>
-<p>ChatGPT的应用场景还包括：
-用来开发聊天机器人，也可以编写和调试计算机程序，还可以进行文学、媒体相关领域的创作，包括创作音乐、电视剧、童话故事、诗歌和歌词等。在某些测试情境下，ChatGPT在教育、考试、回答测试问题方面的表现甚至优于普通人类测试者。</p>
-<h1 id="王文博">王文博</h1>
-<p>Measurement and control technology is a comprehensive discipline that <strong>integrates</strong> a series of disciplines such as sensors, actuators, controllers, and computer technology. It has the characteristics of intelligence, automation, digitization, and networking. Through  the establishment of measurement and control systems, the measured information can be accurately identified by sensors, and the detection results can be transmitted to the controller core. Then, through <strong>the control algorithm program</strong> in the core, control commands can be issued to the actuator, To achieve control objectives and achieve high-quality control results, various control methods such as <strong>feedback</strong> are often added to the control process, which can save comprehensive costs and improve control efficiency.</p>
-<ul>
-<li>integrate 合并，融合</li>
-<li>the control algorithm program 控制算法程序</li>
-<li>feedback 反馈信号</li>
-</ul>
-<p>测控技术是融合了传感器、执行器、控制器、计算机技术等一系列学科的综合学科，其具有智能化、自动化、数字化、网络化等特点，通过测控系统的建立，可以通过传感器精确识别被测量信息，将检测结果传送至控制器核心内，然后通过核心内的控制算法程序，向执行器发出控制命令，以实现控制目标，为了得到优质的控制效果，往往在控制环节中加入反馈等各种控制手段，在节省综合成本的同时，可以提高控制效率。</p>
-<p>Sensors are devices that convert a series of physical quantities such as sound, light, and temperature into electrical values such as voltage, current, and resistance. As detection components in the <strong>electromechanical integration</strong> industry, industrial robotics industry, and electronic control systems, they are essential and <strong>irreplaceable</strong>. With the continuous development of measurement and control technology, the integration of high-precision measurement and control methods into the manufacturing and application of sensors will greatly improve the accuracy, repetitive accuracy, <strong>resolution</strong>, and shorten the response time of sensors. Especially in systems with <strong>large lag links</strong> such as temperature, pressure, and flow measurement, it has clear advantages.</p>
-<ul>
-<li>electromechanical integration 机电一体化技术</li>
-<li>irreplaceable 不可替代的</li>
-<li>resolution 分辨率，清晰度，决议，决心</li>
-<li>large lag links 大滞后环节</li>
-</ul>
-<p>传感器是将例如声、光、温度等一系列物理量转换为电压、电流、电阻等电量值的设备，作为机电一体化行业、工业机器人行业、电子控制系统中的检测部分，是必不可少的和不可替代的。随着测控技术的不断发展，其高精度的测控手段融入至传感器的制造和应用中，会大大提高传感器的精度、重复精度、分辨率，缩短传感器响应时间，尤其在测量温度、压力、流量等具有大滞后环节的系统中具有明显的优势。</p>
+<style></style>
 
-        
-        
-    </body>
-    </html>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+    <!-- <link rel="stylesheet" href="beauty.css"> -->
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+    </style>
+    <style>
+        .task-list-item {
+            list-style-type: none;
+        }
+
+        .task-list-item-checkbox {
+            margin-left: -20px;
+            vertical-align: middle;
+            pointer-events: none;
+        }
+    </style>
+
+</head>
+
+<body class="vscode-body vscode-light">
+    <!-- title:文献阅读总结 -->
+    <h1 id="目录">目录</h1>
+    <ul>
+        <li><a href="#%E5%88%98%E6%AC%A3%E6%82%A6">刘欣悦</a></li>
+        <li><a href="#%E4%BB%BB%E6%96%87%E6%96%8C">任文斌</a></li>
+        <li><a href="#%E5%BC%A0%E5%AE%87">张宇</a></li>
+        <li><a href="#%E4%BB%BB%E5%B9%BF%E8%BD%B6">任广轶</a></li>
+        <li><a href="#%E8%94%A1%E7%A3%8A">蔡磊</a></li>
+        <li><a href="#%E5%94%90%E5%98%89%E5%A5%95">唐嘉奕</a></li>
+        <li><a href="#%E7%8E%8B%E6%96%87%E5%8D%9A">王文博</a></li>
+    </ul>
+    <h1 id="刘欣悦前两段">刘欣悦（前两段）</h1>
+    <h2
+        id="toward-automatic-information-search-and-convergence-a-method-on-dynamic-information-requirement-expression-generation">
+        Toward automatic information search and convergence: A method on dynamic information requirement expression
+        generation</h2>
+    <h2 id="面向信息自动搜索与收敛一种动态信息需求表达生成方法">面向信息自动搜索与收敛：一种动态信息需求表达生成方法</h2>
+    <h3 id="abstract"><strong>Abstract</strong></h3>
+    <p>As available information on networked environment becomes more abundant, diversified, and
+        <strong>dispersed</strong>（分散的）, traditional fixed information service mode will be
+        <strong>substituted</strong>（替代） by <strong>on-demand</strong>（请求式） information search and
+        <strong>convergence</strong>（融合）. Therefore, <strong>dynamic</strong>（动态的） and precise express of user
+        information requirement becomes an important impact factor of information service quality.</p>
+    <p>随着网络环境下可用信息的日益丰富、多样化和分散化，传统的固定信息服务模式将被按需信息搜索和融合所取代。因此，用户信息需求的动态、精准表达成为影响信息服务质量的重要因素。</p>
+    <p>Based on TIREM (task information requirement express model), a method is <strong>proposed</strong>（提出） on dynamic
+        information requirement expression generation, along with a demo software developed to
+        <strong>verify</strong>（证实） the <strong>feasibility</strong>（可能性） of TIREM and the proposed method.</p>
+    <p>在任务信息需求表达模型(TIREM)的基础上，提出了一种动态信息需求表达的生成方法，并开发了一个演示软件来验证该方法的可行性。</p>
+    <h3 id="b-girdl-and-analytical-transformation-mechanismgirdl与解析转化机制"><strong>B. GIRDL and Analytical Transformation
+            Mechanism（GIRDL与解析转化机制）</strong></h3>
+    <p>In this paper, the General Information Requirements Description Language (GIRDL) <strong>syntax</strong>（句法规则）
+        <strong>specification</strong>（规范） , and the syntax specification for further expansion, formed a “Select …
+        Where … When … From. ” as the main syntax, then <strong>illustrate</strong>（说明） 4 field meanings:</p>
+    <p>在本文中，通用信息需求描述语言(GIRDL)语法规范，和进一步扩展的语法规范形成了“Select…Where…When…From”。作为主要语法，然后说明4个字段的含义:</p>
+    <p>Select and Where to follow <strong>SQL syntax</strong>（一种数据库语法）. <strong>Wherein</strong>（其中）, Select indicating
+        unknown information to be queried, Where used to indicate the relevant known information defining the
+        information to be queried. But unlike in SQL, Select and Where in terms GIRDL not simply attribute name, but a
+        string of “subject” and the name “attribute” name and “.” Symbols or known as the “property chain”.</p>
+    <p>Select and Where to follow
+        SQL语法。其中:‘选择’表示要查询的未知信息。其中，表示相关的已知信息，定义要查询的信息。但与SQL中不同的是，GIRDL中的Select和Where不是简单的属性名称，而是一个由“subject”和名称组成的字符串“属性”name和“。”符号或称为“属性链”。
+    </p>
+    <h3 id="c-template-driven-approach基于模板驱动的信息需求表达式"><strong>C. Template-Driven Approach（基于模板驱动的信息需求表达式）</strong></h3>
+    <p>For applications in the field of user <strong>transaction</strong>（交易） categories, each category of firms will
+        need to write a message <strong>template</strong>（模板） information needs to define the type and
+        <strong>scope</strong>（范围） of information required to define the <strong>appropriate</strong>（合适的） variables for
+        factors which change during treatment to practical matters,</p>
+    <p>对于用户交易类别领域的应用，每一类公司都需要编写信息模板，需要确定信息的类型和范围，需要确定在处理实际事项期间发生变化的因素的适当变量;</p>
+    <p>transferring the corresponding the template and the actual value of the variable to fill in the blank template to
+        generate the actual information needs of expression,then the expression parsing（解析，分析） conversion
+        <strong>mechanism</strong>（机制） according to the information needs to be converted to the corresponding type of
+        information requested,</p>
+    <p>传递相应的模板和实际值的变量来填充空白模板，生成实际信息需要的表达式，然后表达式解析转换机制根据所需要的信息转换为所请求信息的相应类型;</p>
+    <p>and then according to the expression of art <strong>terminology</strong>（术语）, demand accurately described above
+        is the core idea of this method. Summed up: by early accumulation of a certain amount of knowledge, and then
+        used to dynamically generate demand.</p>
+    <p>然后根据艺术术语的表达，准确描述上述需求是该方法的核心思想。总结起来就是:通过前期积累一定的知识，然后用来动态地产生需求。</p>
+    <p>Difficulties approach is that <strong>mining</strong>（挖掘） <strong>miracles mapping
+            knowledge</strong>（前文提到的一种叫奇迹映射的知识提取与描述方法。） in three steps: (1) to dig out what key factors play a role in
+        restricting transactions between the user and the information demand, such as the target value systems,
+        transaction <strong>execution</strong>（执行，实施） logic, Equipment Capability environmental characteristics;</p>
+    <p>难点方法是分三步挖掘奇迹映射知识:(1)挖掘制约用户与信息需求之间交易的关键因素，如目标值体系、交易执行逻辑、设备能力环境特征等;</p>
+    <p>(2) to dig out the relationship of <strong>mutual</strong>（相互的，彼此的） restraint between these key factors; (3) to
+        dig out these key factors for law information needs. Three steps to achieve this requires a lot of digging to do
+        letter <strong>mapping</strong>（映射） instance as the sample data, these data can be obtained is the
+        <strong>prerequisite</strong>（前提） ability to carry out mining lies.</p>
+    <p>(2)挖掘出这些关键因素之间相互制约的关系;(3)挖掘出这些法律信息需求的关键因素。实现这三步需要大量的挖掘做字母映射实例作为样本数据，这些数据的获取是进行挖掘能力的前提所在。</p>
+    <h1 id="任文斌">任文斌</h1>
+    <h2 id="database-management-systemsdbms-and-management-information-systemmis">Database management systems(DBMS) and
+        management information system(MIS)</h2>
+    <h2 id="数据库管理系统dbms和管理信息系统mis">数据库管理系统（DBMS）和管理信息系统(MIS)</h2>
+    <p>You know that a database is a collection of <strong>logically</strong> related data elements that may be
+        structured in various ways to meet the multiple processing and retrieval needs of organizations and individuals.
+        There's nothing new about databases--early ones were <strong>chiseled</strong> in stone, penned on scrolls, and
+        written on index cards. But now databases are commonly recorded on <strong>magnetically</strong> media, and
+        computer programs are required to perform the necessary storage and retrieval operations.</p>
+    <ul>
+        <li>logically['lɒdʒɪkli] adv.逻辑</li>
+        <li>chiseled['tʃɪzəld] v.凿</li>
+        <li>magnetically adv.磁化</li>
+    </ul>
+    <p>众所周知，数据库是逻辑上相关的数据元的汇集，这些数据元可以按不同的结构组织起来，以满足单位和个人的多种处理和检索的需要。数据库本身不是什么新鲜事---早期的数据库凿在石头上，记在名册上，以及写在索引卡中。而现在，数据库普遍记录在可磁化的介质上，并且需要用计算机程序来执行必需的存储和检索操作。
+    </p>
+    <p>You'll see in the following pages that complex data relationships and linkages may be found in all but the
+        simplest databases. The system software package that handles the difficult tasks associated with creating,
+        accessing, and maintaining database records is called a database management system (DBMS). The programs in a
+        DBMS package establish an interface between the database itself and the users of the database. (These users may
+        be applications programmers, managers and others with information needs, and various OS（operating system）
+        programs. )</p>
+    <p>如下所述，除最简单以外的所有数据库中都有复杂的数据关系及其链接。处理与创建、访问以及维护数据库记录有关的复杂任务的系统软件包叫做数据库管理系统(DBMS)。DBMS软件包中的程序在数据库与其用户间建立接口。(这些用户可以是应用程序员、管理员、及其他需要信息的人员和各种操作系统程序)。
+    </p>
+    <p>A DBMS can organize, process, and present selected data elements from the database. This capability enables
+        decision makers to search, probe, and query database contents in order to extract answers to
+        <strong>nonrecurring</strong> and unplanned questions that aren't available in regular reports. These questions
+        might initially be vague and/or poorly defined, but people can &quot;browse&quot; through the database until
+        they have the needed information.</p>
+    <ul>
+        <li>nonrecurring 非经常性的</li>
+        <li>vague 模糊</li>
+        <li>browse 浏览</li>
+    </ul>
+    <p>DBMS可组织、处理和表示从数据库中选出的数据元。该功能使决策者能搜
+        索、探查和查询数据库的内容，从而对在正规报告中没有的、不再出现的且无法预料的问题作出回答。这些问题最初可能是模糊的并且(或者)是定义不恰当的，但是人们可以浏览数据库直到获得所需的信息。</p>
+    <p>In short, the DBMS will &quot;manage&quot; the stored data items and assemble the needed items from the common
+        database in response to the queries of those who aren't programmers. In a file-oriented system, users needing
+        special
+        information may communicate their needs to a programmer, who, when time permits,will write one or more programs
+        to extract the data and prepare the information. The availability of a DBMS,however, offers users a much faster
+        alternative communications path.</p>
+    <p>简言之，DBMS将“管理”存储的数据项，并从公共数据库中汇集所需的数据项以回答非程序员的询问。在面向文件的系统中，需要特定信息的用户应将他们的要求传送给程序员。该程序员在时间允许时，将编写一个或多个程序以提取数据和准备信息。然而，DBMS
+        的可用性为用户提供了一个更快的替代通信的通道。</p>
+    <p>The management information system (MIS) concept has been defined in dozens of ways. Since one organization's
+        model of an MIS is likely to differ from that of another, it's not surprising that their MIS definitions would
+        also vary in scope and breadth. For our purposes, an MIS can be defined as a network of computer- based data
+        processing procedures developed in an organization and integrated as necessary with manual and other procedures
+        for the purpose of providing timely and effective information to support decision making and other necessary
+        management functions.</p>
+    <p>管理信息系统(MIS)的概念已经用数十种方式定义过。因为MIS的组织模型可能各不相同，所以MIS的定义随应用范围和广度而变化就不奇怪了。本文认为，MIS系统可定义为基于计算机的数据处理过程的网络系统，它是一个机构为了支持决策及其他必需的管理功能提供及时有效的信息而开发的，并且可按需要把人工和其他过程结合在一起。
+    </p>
+    <p>Although MIS models differ,most of them recognize the same concepts. In addition to what might be termed the
+        <strong>horizontal management</strong> structure ,an organization is also divided <strong>vertically</strong>
+        into different specialities and functions which require separate information flows .Combining the horizontal
+        managerial levels with the vertical specialities produces the complex organizational structure . Underlying this
+        structure is a database consisting, ideally, of internally and externally produced data relating to
+        past,present, and predicted furture events.</p>
+    <ul>
+        <li>horizontal management 横向管理</li>
+        <li>vertically 纵向地，垂直地</li>
+    </ul>
+    <p>尽管MIS模型不同，但其中大多数都认可同一个概念。除横向管理结构如何命名之外，一个机构从纵向也可分成需要独立信息流的不同职能部门。综合横向管理级和纵向特长产生了复杂组织结构。这个结构的基础是数据库，该数据库理想的方式是由内部和外部产生的，与过去、现在及预见到的将来事件相关的数据组成。
+    </p>
+    <p>The <strong>formidable</strong> task of the MIS designer is to develop the information flow needed to support
+        decision making Generally speaking,much of the information needed by managers who occupy different levels and
+        who have different responsibilities is obtained from a collection of existing information systems (or
+        subsystems) . These systems may be tied together very closely in an MIS. More often, however, they are more
+        <strong>loosely coupled</strong>.</p>
+    <ul>
+        <li>formidable 艰巨的</li>
+        <li>loosely coupled 松散耦合</li>
+    </ul>
+    <p>MIS设计者的一个棘手的问题是开发支持决策所需的信息流。一般而言，不同级别与不同职责的管理者所需的信息大多来自现有信息系统(或子系统)的汇集，这些系统在MIS中可紧密地结合在一起，但是，更通常存在的情况是松散耦合的。</p>
+    <h1 id="张宇">张宇</h1>
+    <h2 id="ecological-concepts-in-traditional-vernacular-dwellings">Ecological concepts in traditional vernacular
+        dwellings</h2>
+    <h2 id="传统民居建筑体现的生态思想">传统民居建筑体现的生态思想</h2>
+    <h3 id="simple-ecological-concept-of-human-nature-oneness"><strong>Simple ecological concept of &quot;human-nature
+            oneness&quot;</strong></h3>
+    <h3 id="天人合一的朴素生态观"><strong>“天人合一”的朴素生态观</strong></h3>
+    <p>“Human-nature oneness” is a fundamental theme of traditional Chinese eco-culture, also a guiding rule of
+        Confucianism and Taoism the predominant cultures of China for coordinating the relationship between human and
+        nature, the ideal living state that people yearned for in the age of agricultural civilization. The site
+        selection, structure, appearance, form and style of vernacular dwellings all demonstrate the concept of
+        “human-nature oneness”, to realize the harmonious development of human, building and environment.</p>
+    <p>“天人合一”是中国生态文化传统中一个根本性的主题,也是中国主流文化的儒家和道家所主张的一种协调人与自然关系的指导思想,同时还是农业文明时代人们所向往的一种至高的生存境界。民居建筑的选址、格局、外观、形式和风格无不体现出“天人合一”的思想,实现人、建筑与环境的和谐发展。
+    </p>
+    <p>Construction ideas of coexisting with nature harmoniously followed by traditional vernacular dwellings include
+        the voluntary protection over water sources and land in the natural environment, as well as the greening of
+        dwelling environment. For example, cave-house is a frequently-seen folk house in the Loess Plateau, being
+        influenced by the simple ecological concept of “human-nature oneness”, is always constructed according to actual
+        landforms with local materials by integrating into local eco-environment.</p>
+    <p>传统民居建设遵循与自然谐调共生的营建思想包括对自然环境中水源、土地的主动保护,对居民周围环境进行绿化等。如窑洞式住宅是黄土高原地区较为普遍的民居形式,受到“天人合一”朴素生态观念的影响,它顺应自然,因地制宜,因材致用,适应环境,融合生态。
+    </p>
+    <p>Cave-house is always located along the mountain foot, hillside, gully or on the tableland, without occupying
+        cultivated land[1].A vaulted doorway is constructed at the entrance to the cave-house with bricks and
+        <strong>ornamental</strong>（装饰性的） patterns, which can not only maintain a stable cave entrance, but also
+        beautify the living environment . As construction materials are concerned, the thick loess layer with less
+        <strong>permeability</strong>（渗透性） provides an <strong>unprecedented</strong>（空前的） condition for constructing
+        cave-houses.</p>
+    <p>如表现在选址上,窑洞常坐落于黄土高原的山脚下、半山腰、冲沟两侧或黄土塬上,不占耕地,节约农田。在窑洞前部用砖砌成拱形门洞,并做花饰,既起到保证窑脸的黄土稳定的作用,又起到美化生活环境的作用。表现在建筑材料上,厚且难渗水的黄土层,为窑洞建筑的形成提供了得天独厚的条件。
+    </p>
+    <p>Besides, the dry climate in northwestern China with less <strong>precipitation</strong>（降水）, cold winter and
+        insufficient wood resources also provide opportunities for developing such an economic and practical house type
+        which needs no wood, create a space warm in winter and cool in summer.</p>
+    <p>西北地区气候干燥少雨、冬季寒冷、木材较少等自然状况,也为冬暖夏凉、经济适用、不需木材的窑洞,创造了发展和延续的契机。</p>
+    <p>In this region, low air temperature and deep groundwater level keep surface soil dry, and its sick soil layer,
+        strong <strong>cohesive</strong>（有结合力的） strength and shear <strong>strength</strong>（抗剪强度） ensure an excellent
+        integrity, stability and moderate plasticity, thus vertical wall will not be easily broken, and cave-house is a
+        suitable housing type in this region.</p>
+    <p>该地区空气温度小,地下水位深,地表土层经常能保持较干燥的状态,土层深厚,土质粘度较高,粘聚力和抗剪强度较强,具有较好的整体性、稳定性和适度的可塑性,直壁不易坍塌,适宜开挖窑洞。</p>
+    <p>Meanwhile, due to the heat storage and proofing effect of soils, indoor spaces will be cool in summer and warm in
+        winter. Above the cave-houses, plants are growing to maintain water and soil. Observing from the indoor, rooftop
+        is vaulted, cooking stove is connected with kang (heatable brick bed), in this way, the whole room is easily
+        exposed to sunshine but not wind or sand.</p>
+    <p>同时由于土壤良好的蓄热、隔热性能,使得建筑冬暖夏凉。窑洞的上方,种植植物以保持水土。从室内观察窑洞,屋顶是弧形的拱状,灶台连着暖炕。阳光易照射进来,风沙难以入内。</p>
+    <h3 id="fengshui-doctrine-of-balance-of-yin-and-yang"><strong>Fengshui doctrine of &quot;balance of yin and
+            yang&quot;</strong></h3>
+    <h3 id="负阴抱阳的风水观"><strong>“负阴抱阳”的风水观</strong></h3>
+    <p>Fengshui, with its simple natural view and people’s psychological demands of “avoiding unluckiness and seeking
+        for luckiness”, reflects the relationship between human settlement and nature, although includes some
+        <strong>superstitious</strong>（迷信的） factors, its fundamental doctrines show the scientific understandings of
+        ancient Chinese about environmental conditions for finding a suitable living space.</p>
+    <p>“风水”以极朴素的自然观和“避凶趋吉”的心理需求,反映了人类聚居与自然的关系。虽然它包含较多的迷信成分,但它的基本原则却反映了早期中国人为寻找理想的居住地点,对环境条件的科学认识。</p>
+    <p>“Facing sunny side and water, backing on the shady side and mountains” is the basic principle to select a
+        location of house in China. According to the geographical and climatic conditions in China, mountains behind the
+        house can hold the cold current from the west in winter, facing the south and sunny side embrace cool breeze
+        from the south in summer and ensure sufficient sunshine in winter, location near water provide convenient
+        irrigation and domestic water use, better transportation and also aquiculture.</p>
+    <p>“负阴抱阳,背山面水”是中国传统民居择址的基本原则。根据我国具体的地理环境和气候特点,背山可以遮挡冬天北来的寒流;面南可以迎纳夏日南来的凉风;朝阳可以获得充足的日照;近水可以取得方便的生活、灌溉用水,还有利于水运交通及水产养殖。
+    </p>
+    <p>Plains with gentle slopes can avoid flood disasters, flourishing vegetation in the mountain can maintain water
+        and soil, improve microclimate, as well as provide fuels and other resources for residents.</p>
+    <p>略有缓坡的平川可免受水患灾害,山上植被丰茂可以保持水土,改善小气候,并为人们提供燃料和其他多种资源。</p>
+    <p>Therefore, such excellent environmental conditions are extremely suitable for people’s living. Laozi once said
+        “Human models itself after Earth, the Earth models itself after Heaven, the Heaven models itself after Tao, Tao
+        models itself after the Nature”. All creatures in this world consist of yin and yang, being coordinated and
+        balanced, for instance, traditional quadrangles have both courtyard and sky well thus are proper combinations of
+        natural environment and relatively close spaces , which are favorable for shaping the microclimate of ecological
+        environment, and are demonstrations of balanced yin and yang.</p>
+    <p>这种天造地就的优良环境,极适合人们休养生息,无疑会给人们带来舒适的居住环境。老子曰:“人法地,地法天,天法道,道法自然”。世界万物都是阴阳互补共成、均衡协调的,如传统民居建筑四合院中有庭院和天井,具有自然环境和相对闭合的空间、有利于生态环境小气候的形成,是负阴抱阳、阴阳互补的有力见证,以形聚气,气凝于穴。
+    </p>
+    <p>In this case, houses represent yang, also shi (real), while courtyard represents yin, also xu (virtual), and the
+        combination of both provide solutions to various problems, such as sun exposure,
+        <strong>ventilation</strong>（通风）, thermal retardation, heat protection, wind proof, dehumidification, keeping
+        off shade, wind prevention, <strong>drainage</strong>（排水） and so on. All of these favorable functions owe to
+        courtyard and sky well which bring the nature into living environment, reproduce a miniature as well as a serene
+        and beautiful space with <strong>vitality</strong>（生命力）.</p>
+    <p>宅地屋宇为阳即为实,庭院天井为阴即为虚,解决了日照、通风、保温、隔热、防风、祛湿、隔阴、防火、排水等问题,这要归功于庭院天井引入自然,再造自然,使空间优美净雅却又生机盎然。</p>
+    <h1 id="任广轶">任广轶</h1>
+    <h2 id="how-transistors-changed-the-world-over-75-years">How Transistors Changed the World over 75 Years</h2>
+    <h2 id="晶体管如何在75年内改变世界">晶体管如何在75年内改变世界</h2>
+    <p>晶体管泛指一切以半导体材料为基础的单一元件，晶体管具有检波、整流、放大、开关、稳压、信号调制等多种功能，晶体管可用于各种各样的数字和模拟功能。</p>
+    <p>打个简单的比喻，我们的大脑由1000亿个称为神经元的细胞组成，这些细胞用于思考和记忆事物。计算机也一样，也有数十亿个名为晶体管的微小脑细胞。</p>
+    <p>在数字电路领域，电子管和晶体管通俗理解就是可以控制的开关，所以可以实现逻辑运算。在模拟电路领域，电子管和晶体管通俗理解就是放大信号，输入一个微弱的信号可以输出一个放大了很多倍的信号。集成电路的通俗理解就是一个有黑色壳封装的硅片上面有几十亿个晶体管可以实现各种逻辑运算。
+    </p>
+    <p>Some historians of technology have argued that the transistor, first crafted at Bell Labs in late 1947, is the
+        most important invention in human history. Whether that's true or not, what is without question is that the
+        transistor helped trigger a revolution that digitized the world.</p>
+    <p>晶体管于1947年底在贝尔实验室首次被制造出来。一些科技史学家认为，晶体管是人类历史上最重要的发明。不管这是真是假，毫无疑问的是，晶体管引发了一场世界数字化的革命。</p>
+    <p>Transistors are typically made from certain elements called semiconductors, which are useful for manipulating
+        current. The first transistor was fashioned from a metalloid, germanium. By the mid-1960s, most transistors were
+        being made from silicon, and engineers were packing transistors together into complex integrated circuits: the
+        foundation of computer chips.</p>
+    <p>晶体管通常由某些被称为半导体的材料制成，这些材料对控制电流很有用。第一个晶体管是用类金属锗制成的。到上世纪60年代中期，大多数晶体管都是由硅制成的，工程师们将晶体管打包成复杂的集成电路：这是计算机芯片的基础。</p>
+    <p>Before its dominance, electronics relied on vacuum tubes. Vacuum tubes have a few advantages over transistors.
+        They could generate more power. But vacuum tubes are very bulky and delicate. The transistor seemed to be a
+        convenient replacement.</p>
+    <p>在晶体管占据主导地位之前，电子产品依赖于真空管。与晶体管相比，真空管有一些优点。它们可以产生更多的能量。但是真空管非常笨重，而且易碎。晶体管似乎是一种方便的替代品。</p>
+    <p>A computer built just before the start of the transistor era — ENIAC — used 18,000 vacuum tubes and filled up a
+        space the size of a ballroom. Vacuum tube computers squeezed into smaller rooms over time. Even then, 1951's
+        UNIVACI cost over a million dollars, and its customers were large businesses or data-heavy government agencies.
+        It wouldn't be until the 1970s and 1980s when personal computers, powered by transistors, started to enter
+        middle-class homes.</p>
+    <p>一台在晶体管时代开始前制造的计算机——ENIAC——使用了18000个真空管，占据了一个舞厅大小的空间。随着时间的推移，真空管计算机也挤进了更小的房间。即使在那时，1951年的UNIVACI耗资超过100万美元，其客户是大企业或数据量大的政府机构。直到上世纪七八十年代，由晶体管驱动的个人电脑才开始进入中产阶级家庭。
+    </p>
+    <p>Without transistors, we might live in a world where a computer is something you'd use at work — not at home.
+        Forget smartphones, handheld navigation, flatscreen displays, electronic timing screens in train stations, or
+        even humble digital watches.</p>
+    <p>如果没有晶体管，我们可能会生活在一个电脑只在工作场所使用而不是在家里使用的世界。更别提智能手机、手持导航、平板显示器、火车站的电子计时屏幕，甚至是不起眼的电子表了。</p>
+    <p>&quot;The transistor is fundamental for all modern technology, including telecommunications, data communications,
+        aviation, and audio and video recording equipment,&quot; says Ravi Todi, current president of the IEEE Electron
+        Devices Society.</p>
+    <p>电气与电子工程师协会（IEEE）电子设备学会现任主席拉维·托迪（Ravi Todi）说，“晶体管是所有现代技术的基础，包括电信、数据通信、航空以及音频和视频录制设备。”</p>
+    <h1 id="蔡磊">蔡磊</h1>
+    <p>In recent years, the emergence of emerging technologies such as cloud computing and artificial intelligence has
+        led to great development in all walks of life. Among them, as the latest subversive innovation in the game
+        industry, cloud games have become a necessary technology in the game industry and are developing rapidly. This
+        article will discuss the development and trend of cloud game technology from the aspects of the development
+        history of cloud games, the current situation, advantages and disadvantages of cloud game technology, and the
+        future challenges and trends faced by cloud games.</p>
+    <p>近年来，云计算、人工智能等新兴技术的出现，让各行各业都得到了长足的发展。其中，云游戏作为游戏行业最新的颠覆式创新，已经成为游戏行业的必备技术，正在迅速地发展壮大。本文将从云游戏的发展历程、云游戏技术的现状及优缺点、以及云游戏面临的未来挑战和趋势等方面，探讨云游戏技术的发展及其趋势。
+    </p>
+    <p>Cloud games originated from Internet TV games. It is a form of games that transmit game screens to user terminals
+        with the help of high-speed Internet connection. The earliest cloud games appeared around 2000, when cloud games
+        had not been developed enough due to the limitations of network transmission technology. It was not until around
+        2010, due to the progress of cloud computing technology, that cloud games began to enter the public eye and
+        became one of the hottest topics in the game industry.</p>
+    <p>云游戏最早起源于互联网电视游戏，是一种借助高速互联网连接，将游戏画面传输到用户终端上运行的游戏形式。最早的云游戏出现于2000年左右，当时由于网络传输技术的限制，云游戏还没有得到足够的发展。直到2010年左右，由于云计算技术的进步，云游戏才开始进入大众视野，成为游戏行业最热门的话题之一。
+    </p>
+    <p>Cloud game technology has developed to a certain extent and has achieved remarkable results. Its main technical
+        routes include cloud games based on streaming media transmission, browser-based cloud games, and cloud
+        server-based games. So far, cloud game technology has a variety of options such as multiplayer online games,
+        high-quality, 3D virtual reality, etc. However, there are also some advantages and disadvantages of cloud game
+        technology. The advantage is that cloud games allow players to play high-quality games without high-performance
+        graphics cards without considering storage space. At the same time, the distribution of cloud games is also more
+        convenient; the disadvantage is that the delay of the network will affect the game experience. Players of cloud
+        games need to have enough network bandwidth and a stable network connection, otherwise there may be problems
+        such as stuttering and disconnection.</p>
+    <p>云游戏技术已经发展到了一定的程度，取得了较为显著的成果。其主要技术路线有基于流媒体传输的云游戏、基于浏览器的云游戏、基于云服务器的云游戏。至今，云游戏技术已经具备了多人在线游戏、高画质、3D虚拟现实等多种选择。然而，云游戏技术也存在一些优缺点。其优点在于云游戏可以让玩家不需要高性能显卡就能玩到高画面质量游戏，无需考虑存储空间。同时，云游戏的分发也更为便捷；缺点则在于网络的延迟会对游戏体验有所影响。云游戏的玩家需要有足够的网络带宽和稳定的网络连接，否则可能会出现卡顿、掉线等问题。
+    </p>
+    <p>Although cloud games have many advantages, they also face many future challenges. One of the biggest challenges
+        is the problem of network latency. Although broadband network technology has made great progress, the network
+        speed is still not stable enough, and the delay problem is still one of the biggest problems. Secondly, cloud
+        games should do a good job in the protection of player data. Game data, personal data, etc. in cloud games may
+        face the risk of privacy disclosure. Finally, cloud games should solve the problem of game balance. When playing
+        games on different devices, the player's comprehensive ability of the device will be different, which is a great
+        challenge to the balance of the game.</p>
+    <p>虽然云游戏有很多的优点，但是它也面临着许多未来挑战。其中最大的挑战就是网络延迟的问题。虽然现在宽带网络技术已经取得了很大进步，但是网速仍然不够稳定，延迟问题依然是最大问题之一。其次，云游戏要做好玩家数据的保护。云游戏中的游戏数据、个人数据等，可能面临着隐私泄露的风险。最后，云游戏要解决游戏平衡性问题。在各种不同的设备上进行游戏时，玩家的设备综合能力会有差异，对于游戏的平衡性是很大的挑战。
+    </p>
+    <p>In the future, cloud game technology will develop in the following aspects: first, vigorously develop 5G network
+        technology to accelerate the transmission speed of cloud games and improve the quality of cloud games; second,
+        quickly develop artificial intelligence technology to combine cloud games with AI to increase players' game
+        experience; third, introduce blockchain technology to empower the effective circulation of game data. Through
+        the above upgrades, the user experience of cloud games will be greatly optimized.</p>
+    <p>未来的云游戏技术将会在以下几方面发展：第一、大力发展5G网络技术，加快云游戏的传输速度，提升云游戏的品质；第二、快速发展人工智能技术，将云游戏与AI相结合，增加玩家的游戏体验；第三、引入区块链技术赋能游戏数据有效流转。通过以上升级，将会极大地优化云游戏的用户体验。
+    </p>
+    <p>Conclusion In a word, cloud game technology will have more far-reaching influence and value, and there will be
+        indispensable technical challenges and improvement solutions on the road to development. The continuous
+        improvement and expansion of future development will certainly become an irreplaceable part of the game
+        industry. The development of cloud games may be very long, but the future development direction and trend are
+        very clear.</p>
+    <p>未来的云游戏技术将会在以下几方面发展：第一、大力发展5G网络技术，加快云游戏的传输速度，提升云游戏的品质；第二、快速发展人工智能技术，将云游戏与AI相结合，增加玩家的游戏体验；第三、引入区块链技术赋能游戏数据有效流转。通过以上升级，将会极大地优化云游戏的用户体验。第六章：结论总之，云游戏技术将会有更加深远的影响力和价值，而在发展之路上也有着不可或缺的技术挑战和改进方案，在未来的发展中持续的提高和扩展，必将成为游戏行业不可替代的一部分。云游戏的发展可能还很漫长，但未来的发展方向和趋势已经非常的清晰。
+    </p>
+    <h1 id="唐嘉奕">唐嘉奕</h1>
+    <h2 id="chatgpt-a-chat-robot-program-driven-by-ai-technology"><strong>ChatGPT</strong> A Chat Robot Program Driven
+        by AI Technology</h2>
+    <h3 id="简介">简介</h3>
+    <p>ChatGPT (Chat Generative Pre-trained Transformer) is a generative pre trained transformation model developed by
+        the OpenAI team in the United States. At this time, ChatGPT knows astronomy and geography, and can also interact
+        based on the context of the chat. It is not only a chat robot, but also capable of tasks such as writing emails,
+        video scripts, copywriting, translating, and writing code.</p>
+    <p>ChatGPT（Chat Generative Pre-trained Transformer）全称为生成型预训练变换模型，由美国
+        OpenAI团队研发。此时的ChatGPT上知天文下知地理，还能根据聊天的上下文进行互动。它不单是聊天机器人，还能进行撰写邮件、视频脚本、文案、翻译 、写代码等任务。</p>
+    <h3 id="technical-logic技术逻辑">Technical Logic(技术逻辑)</h3>
+    <p>GPT is a pre-trained language model based on deep learning, which utilizes large-scale text data preprocessing
+        and model training to enable it to recognize and generate natural language texts. In this process, the model
+        will refer to a large number of conversation samples, learn the rules and features of human language structure,
+        and then generate corresponding answers.
+        GPT是一个基于深度学习的预训练语言模型，使用了大规模的文本数据预处理和模型训练，使其能够识别和生成自然语言文本。此过程中，模型会参考大量的对话样本，学习到人类语言结构的规则和特征，然后生成相应的回答。</p>
+    <p>The emergence of this technology has overturned traditional rule-based chat robots. In the past, robots relied on
+        developers to manually set rules for specific problems, but this method could not cover all situations. The chat
+        robot using the GPT pre-training model has self-learning ability and can continuously learn and improve itself
+        from existing sample data, thus being able to answer user questions more accurately.</p>
+    <p>这种技术的出现，颠覆了传统的基于规则的聊天机器人。以往的机器人需要依赖开发者针对特定问题进行人工规则的设置，但是这种方法无法覆盖所有情况。而采用GPT预训练模型的聊天机器人，具有自学习能力，可以从已有的样本数据中不断学习和完善自己，因此能够更加准确地回答用户的问题。
+    </p>
+    <p>The application scenarios of ChatGPT also include:
+        Used to develop chat robots, write and debug computer programs, and create works in literature and media related
+        fields, including music, TV dramas, fairy tales, poetry, and lyrics. In certain testing scenarios, ChatGPT
+        performs even better than ordinary human testers in education, exams, and answering test questions.</p>
+    <p>ChatGPT的应用场景还包括：
+        用来开发聊天机器人，也可以编写和调试计算机程序，还可以进行文学、媒体相关领域的创作，包括创作音乐、电视剧、童话故事、诗歌和歌词等。在某些测试情境下，ChatGPT在教育、考试、回答测试问题方面的表现甚至优于普通人类测试者。
+    </p>
+    <h1 id="王文博">王文博</h1>
+    <p>Measurement and control technology is a comprehensive discipline that <strong>integrates</strong> a series of
+        disciplines such as sensors, actuators, controllers, and computer technology. It has the characteristics of
+        intelligence, automation, digitization, and networking. Through the establishment of measurement and control
+        systems, the measured information can be accurately identified by sensors, and the detection results can be
+        transmitted to the controller core. Then, through <strong>the control algorithm program</strong> in the core,
+        control commands can be issued to the actuator, To achieve control objectives and achieve high-quality control
+        results, various control methods such as <strong>feedback</strong> are often added to the control process, which
+        can save comprehensive costs and improve control efficiency.</p>
+    <ul>
+        <li>integrate 合并，融合</li>
+        <li>the control algorithm program 控制算法程序</li>
+        <li>feedback 反馈信号</li>
+    </ul>
+    <p>测控技术是融合了传感器、执行器、控制器、计算机技术等一系列学科的综合学科，其具有智能化、自动化、数字化、网络化等特点，通过测控系统的建立，可以通过传感器精确识别被测量信息，将检测结果传送至控制器核心内，然后通过核心内的控制算法程序，向执行器发出控制命令，以实现控制目标，为了得到优质的控制效果，往往在控制环节中加入反馈等各种控制手段，在节省综合成本的同时，可以提高控制效率。
+    </p>
+    <p>Sensors are devices that convert a series of physical quantities such as sound, light, and temperature into
+        electrical values such as voltage, current, and resistance. As detection components in the
+        <strong>electromechanical integration</strong> industry, industrial robotics industry, and electronic control
+        systems, they are essential and <strong>irreplaceable</strong>. With the continuous development of measurement
+        and control technology, the integration of high-precision measurement and control methods into the manufacturing
+        and application of sensors will greatly improve the accuracy, repetitive accuracy, <strong>resolution</strong>,
+        and shorten the response time of sensors. Especially in systems with <strong>large lag links</strong> such as
+        temperature, pressure, and flow measurement, it has clear advantages.</p>
+    <ul>
+        <li>electromechanical integration 机电一体化技术</li>
+        <li>irreplaceable 不可替代的</li>
+        <li>resolution 分辨率，清晰度，决议，决心</li>
+        <li>large lag links 大滞后环节</li>
+    </ul>
+    <p>传感器是将例如声、光、温度等一系列物理量转换为电压、电流、电阻等电量值的设备，作为机电一体化行业、工业机器人行业、电子控制系统中的检测部分，是必不可少的和不可替代的。随着测控技术的不断发展，其高精度的测控手段融入至传感器的制造和应用中，会大大提高传感器的精度、重复精度、分辨率，缩短传感器响应时间，尤其在测量温度、压力、流量等具有大滞后环节的系统中具有明显的优势。
+    </p>
+
+
+
+</body>
+
+</html>
