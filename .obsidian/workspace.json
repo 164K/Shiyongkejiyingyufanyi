@@ -12,9 +12,11 @@
             "id": "f0558783f6da592c",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "WUT_Beamer_Theme_Advanced.pdf"
+                "file": "知识总结.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -103,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WUT_Beamer_Theme_Advanced.pdf",
+                "file": "知识总结.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WUT_Beamer_Theme_Advanced.pdf",
+                "file": "知识总结.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WUT_Beamer_Theme_Advanced.pdf"
+                "file": "知识总结.md"
               }
             }
           },
@@ -175,14 +177,14 @@
   },
   "active": "f0558783f6da592c",
   "lastOpenFiles": [
+    "要求.md",
+    "知识总结.md",
+    "Rubik's_cube.svg.png",
+    "image.png",
+    "WUT_Beamer_Theme_Advanced.pdf",
     "文献阅读.md",
     "笔记.md",
     "220px-Spirale_Ulam_150.jpg",
-    "要求.md",
-    "知识总结.md",
-    "WUT_Beamer_Theme_Advanced.pdf",
-    "Rubik's_cube.svg.png",
-    "image.png",
     "未命名.canvas"
   ]
 }
