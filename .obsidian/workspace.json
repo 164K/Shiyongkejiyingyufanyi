@@ -6,7 +6,7 @@
       {
         "id": "211a04a1bfcd0d06",
         "type": "tabs",
-        "dimension": 55.590062111801245,
+        "dimension": 60.42841037204059,
         "children": [
           {
             "id": "f0558783f6da592c",
@@ -25,7 +25,7 @@
       {
         "id": "9c1681924a98e60f",
         "type": "tabs",
-        "dimension": 44.409937888198755,
+        "dimension": 39.57158962795941,
         "children": [
           {
             "id": "737b28af79445bf2",
@@ -89,7 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 231.5
   },
   "right": {
     "id": "a84b05fcedd66f56",
@@ -158,7 +158,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -171,16 +171,20 @@
       "daily-notes:打开/创建今天的日记": false,
       "canvas:新建白板": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "publish:发布更改": false
     }
   },
-  "active": "887c3548591205f3",
+  "active": "f0558783f6da592c",
   "lastOpenFiles": [
     "笔记.md",
+    "220px-Spirale_Ulam_150.jpg",
     "文献阅读.md",
+    "要求.md",
+    "知识总结.md",
     "WUT_Beamer_Theme_Advanced.pdf",
     "Rubik's_cube.svg.png",
-    "220px-Spirale_Ulam_150.jpg",
+    "image.png",
     "未命名.canvas"
   ]
 }
