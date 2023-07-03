@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 215.5,
+    "collapsed": true
   },
   "right": {
     "id": "a84b05fcedd66f56",
@@ -174,7 +175,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "f0558783f6da592c",
+  "active": "887c3548591205f3",
   "lastOpenFiles": [
     "笔记.md",
     "文献阅读.md",
